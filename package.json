@@ -1,0 +1,28 @@
+{
+  "name": "telegram-marketplace",
+  "version": "1.0.0",
+  "description": "Telegram Mini App Marketplace for Bloggers",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "dev:simple": "concurrently \"npm run server:dev:simple\" \"npm run client:dev\"",
+    "dev:minimal": "concurrently \"npm run server:dev:minimal\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "server:dev:simple": "cd server && npm run dev:simple",
+    "server:dev:minimal": "cd server && npm run dev:minimal",
+    "client:dev": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "setup:quick": "npm run install:all && cd server && npm run migrate",
+    "deploy": "chmod +x deploy.sh && ./deploy.sh",
+    "setup:bot": "python setup-telegram-bot.py",
+    "test:bot": "python setup-telegram-bot.py test"
+  },
+  "keywords": ["telegram", "marketplace", "mini-app", "bloggers"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
