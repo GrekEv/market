@@ -1,13 +1,15 @@
+
+
 {
   "version": 2,
   "buildCommand": "cd client && npm install && npm run build",
   "outputDirectory": "client/build",
-  "functions": {
-    "api/index.js": {
-      "runtime": "@vercel/node@2.0.0",
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "server/index.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -25,9 +27,8 @@
     "DATABASE_URL": "https://api.stack-auth.com/api/v1/projects/1002f7c0-6d91-4fed-97ec-eeb8daf07409/.well-known/jwks.json"
   }
 }
-
-
   
+
 
 
 
