@@ -22,11 +22,12 @@
     "NODE_ENV": "production",
     "TELEGRAM_BOT_TOKEN": "8225114194:AAFLNwqrqSGoQoeQr-uibUhC1lfNcSNJgHY",
     "JWT_SECRET": "bf1c2c83e36a77e49ad4a56b2bbdbe31272ad7e72ad53c14a410cc0b38e0f8db",
-    "DATABASE_URL": "@database_url"
+    "DATABASE_URL": "https://api.stack-auth.com/api/v1/projects/1002f7c0-6d91-4fed-97ec-eeb8daf07409/.well-known/jwks.json"
   }
 }
 
   
+
 
 
 
