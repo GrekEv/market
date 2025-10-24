@@ -4,7 +4,7 @@
   "outputDirectory": "client/build",
   "functions": {
     "server/index.js": {
-      "runtime": "nodejs18.x",
+      "runtime": "@vercel/node@2.0.0",
       "maxDuration": 30
     }
   },
@@ -26,7 +26,9 @@
   }
 }
 
+
   
+
 
 
 
