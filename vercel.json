@@ -20,13 +20,14 @@
   ],
   "env": {
     "NODE_ENV": "production",
-    "TELEGRAM_BOT_TOKEN": "@telegram_bot_token",
+    "TELEGRAM_BOT_TOKEN": "8225114194:AAFLNwqrqSGoQoeQr-uibUhC1lfNcSNJgHY",
     "JWT_SECRET": "@jwt_secret",
     "DATABASE_URL": "@database_url"
   }
 }
 
   
+
 
 
 
